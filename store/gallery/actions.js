@@ -6,6 +6,11 @@ export const getGalleries = {
   success: createAction('GET_GALLERIES_SUCCESS'),
   failure: createAction('GET_GALLERIES_FAILURE'),
 };
+export const getGalleriesLimit = {
+  request: createAction('GET_GALLERIES_LIMIT_REQUEST'),
+  success: createAction('GET_GALLERIES_LIMIT_SUCCESS'),
+  failure: createAction('GET_GALLERIES_LIMIT_FAILURE'),
+};
 
 export const getGallery = {
   request: createAction('GET_GALLERY_REQUEST'),

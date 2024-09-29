@@ -4,7 +4,7 @@ import {
     getGallery,
     addGallery,
     updateGallery,
-    deleteGallery
+    deleteGallery, getGalleriesLimit
 } from './actions';
 import axiosInstance from 'configs/axiosIntance';
 
@@ -16,6 +16,16 @@ function* fetchGalleriesSaga({ payload = {} }) {
         yield put(getGalleries.success(galleries));
     } catch (error) {
         yield put(getGalleries.failure(error.message));
+    }
+}
+// Gallery Sagas
+function* fetchGalleriesLimitSaga({ payload = {} }) {
+    try {
+        const response = yield call(() => axiosInstance.get('/galleries/limit', payload));
+        const galleries = response.data;
+        yield put(getGalleriesLimit.success(galleries));
+    } catch (error) {
+        yield put(getGalleriesLimit.failure(error.message));
     }
 }
 
@@ -64,4 +74,5 @@ export function* gallerySaga() {
     yield takeLatest(addGallery.request, addGallerySaga);
     yield takeLatest(updateGallery.request, updateGallerySaga);
     yield takeLatest(deleteGallery.request, deleteGallerySaga);
+    yield takeLatest(getGalleriesLimit.request, fetchGalleriesLimitSaga);
 }

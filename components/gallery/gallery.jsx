@@ -3,13 +3,13 @@ import styles from '../../styles/gallery.module.css'
 import {Image} from "antd";
 import Item from "./item";
 import {useDispatch, useSelector} from "react-redux";
-import {getGalleries} from "../../store/gallery/actions";
+import {getGalleriesLimit} from "../../store/gallery/actions";
 
 const Gallery = () => {
     const galleries = useSelector(state => state.gallery.galleries);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(getGalleries.request());
+        dispatch(getGalleriesLimit.request());
     }, [dispatch])
     return (
         <>

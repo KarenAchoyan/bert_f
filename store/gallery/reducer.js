@@ -1,6 +1,7 @@
 import {handleActions} from 'redux-actions';
 import {
     getGalleries,
+    getGalleriesLimit,
     getGallery,
     addGallery,
     updateGallery,
@@ -19,6 +20,11 @@ const initialState = {
 const galleryReducer = handleActions(
     {
         [getGalleries.success]: (state, {payload}) => ({
+            ...state,
+            galleries: payload,
+            isFetching: true,
+        }),
+        [getGalleriesLimit.success]: (state, {payload}) => ({
             ...state,
             galleries: payload,
             isFetching: true,
@@ -50,6 +56,11 @@ const galleryReducer = handleActions(
             isDeleting: false,
         }),
         [getGalleries.failure]: (state, {payload}) => ({
+            ...state,
+            isFetching: false,
+            error: payload,
+        }),
+        [getGalleriesLimit.failure]: (state, {payload}) => ({
             ...state,
             isFetching: false,
             error: payload,
