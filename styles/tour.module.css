@@ -1,0 +1,88 @@
+.background{
+    margin-top: 40px;
+    background-color: #7D0606;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.heading{
+    margin-bottom: 60px;
+    padding-left: 20px;
+    color: white;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.aboutItem {
+    width: 400px;
+    height: 480px;
+    margin: auto;
+}
+.aboutItem>div{
+    width: 90%;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.upSide {
+    width: 100%;
+    height: 162px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.upSide h2 {
+    font-size: 45px;
+    font-weight: lighter;
+    line-height: 50px;
+}
+.upSide h3 {
+    font-size: 45px;
+    font-weight: lighter;
+    line-height: 50px;
+}
+
+.downSide{
+    height: 318px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+    flex-direction: column;
+}
+
+.downSide span{
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.btn{
+    width: 275px;
+    height: 60px;
+    margin-top: 24px;
+}
+
+
+.btn button{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    background-color: #7D0606;
+    color: white;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    color: gray;
+}
+.rowItems{
+    display: flex;
+    justify-content: center;
+}

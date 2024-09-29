@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: MardotoBlack;
+    src: url(/fonts/Mardoto-Black.ttf);
+}
+@font-face {
+    font-family: MardotoBlackItalic;
+    src: url(/fonts/Mardoto-BlackItalic.ttf);
+}
+@font-face {
+    font-family: MardotoLight;
+    src: url(/fonts/Mardoto-Light.ttf);
+}
+@font-face {
+    font-family: Mardoto;
+    src: url(/fonts/Mardoto-Light.ttf);
+}
+@font-face {
+    font-family: MardotoItalic;
+    src: url(/fonts/Mardoto-Italic.ttf);
+}
+@font-face {
+    font-family: myFont;
+    src: url(/fonts/segoeui.woff);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:myFont;
+}
+li, span, p, a{
+    font-family: myFont;
+}
+
+
+.animation-header .header {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it is above other content */
+    /* Add other styles as needed */
+    background: #000000bf;
+    transition: 1s;
+}
+
+.animation-header.show .header {
+    top: 0;
+}
+.slick-dots li button:before{
+    font-size: 15px!important;
+    margin-top: 20px;
+}

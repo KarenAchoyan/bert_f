@@ -1,0 +1,175 @@
+.header {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    z-index: 10;
+}
+
+.content {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+
+}
+.title>ul>li{
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.title>ul>li:hover{
+    color: #da7373;
+}
+.title>ul>li>a:hover{
+    color: #da7373;
+}
+
+.title>ul {
+    display: flex;
+
+}
+
+.title>ul>li{
+    list-style: none;
+    padding: 11px;
+    margin: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: myFont;
+}
+.title>ul>li>a{
+    font-size: 18px;
+    color: white;
+    line-height: 0;
+    text-decoration: none;
+    font-family: myFont;
+
+}
+
+.middleTitle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #650000;
+    overflow: hidden;
+}
+.middleTitle img{
+    width: 100%;
+    height: 100%;
+}
+.title>ul>li:hover .drb{
+    display: block;
+}
+
+.drb{
+    position: absolute;
+    padding-top: 20px;
+    display: none;
+}
+.drbContent{
+    background: white;
+}
+.drb li{
+    color: black;
+    list-style: none;
+    padding: 7px 13px;
+}
+.drb a{
+    color: black;
+    font-size:16px;
+    text-decoration: none;
+}
+.drb a:hover{
+    color: black;
+}
+.drb li:hover{
+    background: #e0e0e0;
+}
+.menuOutlined{
+    display: none;
+}
+.titles{
+    display: block;
+}
+.titles{
+    display: block;
+}
+.drbs {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 1000;
+}
+.titles > ul > li:hover .drbs {
+    display: block;
+}
+.drbContents {
+    padding: 10px;
+}
+.drbContentsx ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.drbContents ul li {
+    padding: 5px 0;
+}
+.drbContents ul li a {
+    text-decoration: none;
+    color: black;
+}
+.menu a{
+    color: black;
+}
+.menu menu{
+
+}
+@media only screen and (max-width: 1200px) {
+    .title{
+        display: none;
+    }
+    .middleTitle{
+        margin: auto;
+    }
+    .menuOutlined{
+        display: block;
+        color: white;
+        position: relative;
+        top:-70px;
+        right: 30px;
+        justify-content: flex-end;
+        font-size: 30px;
+
+    }
+    .titles{
+        display: block;
+        padding-left: 20px;
+    }
+    .titles>ul>li{
+        list-style: none;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .titles > ul > li > a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .menuOutlined{
+        display: flex;
+    }
+
+}

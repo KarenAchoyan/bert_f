@@ -1,0 +1,147 @@
+.main{
+    position: relative;
+    height: 100vh;
+}
+.banner{
+    height: 100vh;
+    overflow: hidden;
+}
+.media video{
+    width: 100%!important;
+    height: 100% !important;
+}
+.image img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.image{
+    width: 100%;
+    height: 100vh;
+}
+
+.imageContent{
+    color: white;
+    position: absolute;
+    bottom: 105px;
+    left: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.imageContent button{
+    margin-top: 20px;
+}
+.imageContent h1{
+    font-size: 45px;
+    font-weight: lighter;
+    line-height: 70px;
+}
+
+.imageContent span{
+    font-size: 20px;
+    line-height: 28px;
+}
+@media only screen and (max-width: 768px) {
+    .main{
+        height: 360px;
+    }
+    .banner {
+        height:410px;
+    }
+
+    .image {
+        height: 600px;
+    }
+
+    .imageContent {
+        bottom: 50px;
+        left: 50px;
+    }
+
+    .imageContent h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .imageContent span {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media only screen and (max-width: 596px) {
+    .imageContent>h1{
+        font-size: 30px;
+    }
+    .imageContent>span{
+        font-size: 20px;
+        width: 320px;
+    }
+    .imageContent>button{
+        padding: 10px 15px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .banner {
+
+    }
+
+    .image {
+
+    }
+
+    .imageContent {
+        bottom: 30px;
+        left: 30px;
+        align-items: flex-start;
+        position: absolute;
+        top: 100px;
+    }
+
+    .imageContent h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .imageContent span {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .imageContent button {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .imageContent{
+        position: absolute;
+        top: 77px;
+    }
+    .imageContent>h1{
+
+        font-size: 17px;
+    }
+    .imageContent>span{
+        font-size: 18px;
+        width: 220px;
+    }
+    .imageContent>button{
+        padding:5px 10px;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 356px) {
+    .imageContent>h1{
+
+        font-size: 15px;
+    }
+    .imageContent>span{
+        font-size: 14px;
+        width: 220px;
+    }
+    .imageContent>button{
+        padding:5px 10px;
+        font-size: 15px;
+    }
+}
