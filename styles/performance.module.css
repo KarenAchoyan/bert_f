@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .imageContent {
+        margin-top: 0px;
+    }
+
     .main {
         height: auto;
     }
@@ -141,6 +145,7 @@
     }
 
     .content h1 {
+        text-align: center;
         font-size: 28px;
     }
 

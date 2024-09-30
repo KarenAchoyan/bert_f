@@ -29,39 +29,39 @@ const Header = () => {
     {
       label: 'Կենսագրություն',
       key: '1',
+      path:"/about/biography",
 
     },
     {
       label: 'Ղեկավարներ',
       key: '2',
+      path:"/about/managers",
 
-    },
-    {
-      label: 'Մեր արտիստները',
-      key: '3',
-
-    },
+    }
   ];
   const item = [
     {
       label: 'Ելույթներ Հայաստանում',
       key: '1',
 
+      path:"/events/9",
     },
     {
       label: 'Միջազգային ելույթներ',
       key: '2',
+      path:"/events/10",
 
     },
     {
       label: 'Տեսանյութեր',
       key: '3',
+      path:"/events/11",
 
     },
     {
       label: 'Արխիվ',
       key: '4',
-
+      path:"/events/12",
     },
   ];
 

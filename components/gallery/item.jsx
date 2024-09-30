@@ -1,11 +1,11 @@
 import React from 'react';
-import {Image} from "antd";
 import styles from '@/styles/gallery.module.css'
+import Image from "next/image";
 
 const Item = ({image}) => {
     return (
         <div className={styles.image}>
-            <Image src={image} alt=""/>
+            <Image width={500} height={500} src={image} alt=""/>
         </div>
     );
 };
