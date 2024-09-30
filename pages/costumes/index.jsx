@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {useDispatch, useSelector} from "react-redux";
 import {getContent} from "../../store/content/actions";
-import {Image, Skeleton} from "antd";
+import {Skeleton} from "antd";
 import {getCostumes} from "../../store/costume/actions";
+import Image from "next/image";
 
 const Index = () => {
     const settings = {
@@ -96,7 +97,7 @@ const Index = () => {
                             <Slider {...settings}>
                                 {costumes.map((item) => (
                                     <div key={item.id}>
-                                        <Image preview={true} src={process.env.IMAGE_URL2 + item.image} alt="Studio image"/>
+                                        <Image width={500} height={500} src={process.env.IMAGE_URL2 + item.image} alt="Studio image"/>
                                     </div>
                                 ))}
                             </Slider>
