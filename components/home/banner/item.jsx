@@ -6,11 +6,18 @@ const Item = ({item}) => {
     return (
         <div className={styles.main}>
             <div className={styles.media}>
-                <video width={1500} height={1000} autoPlay loop muted controls={false}>
+                <video
+                    width={1500}
+                    height={1000}
+                    playsInline // Ensure the video plays inline without triggering fullscreen
+                    loop
+                    muted
+                    controls={false}>
                     <source src={'berd_banner.mp4'} type="video/mp4"/>
                 </video>
             </div>
         </div>
+
     );
 };
 
